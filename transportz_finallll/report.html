@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 6</title>
+
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["table"] });
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("number", "user id");
+        data.addColumn("string", "Name");
+        data.addColumn("string", "phone number");
+        data.addColumn("number", "active");
+        data.addRows([
+          [1, "Rania","011234897651" , 1],
+          [2, "tamer", "01088774321", 0],
+          [3, "tt", "012456677993", 1],
+          [4, "ashraf","0114987610" , 1],
+        ]);
+
+        var table = new google.visualization.Table(
+          document.getElementById("table_div")
+        );
+
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="table_div"></div>
+  </body>
+</html>

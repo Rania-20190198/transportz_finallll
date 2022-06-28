@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <!DOCTYPE html>
+<html>
+
+  
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Transportz</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+        <div class="hero_area">
+          <!-- header section strats -->
+          <section class="header_section">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg custom_nav-container d-lg-none">
+                <a class="navbar-brand" href="#">
+                  <div class="logo-box">
+                    <img src="images/logo.png" alt="">
+                    <span>
+                      Transportz
+                    </span>
+                  </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav  ">
+                   
+                   
+                    
+                  </ul>
+                </div>
+              </nav>
+              <div class="header_container ">
+                <div class="logo-box">
+                  <img src="images/logo.png" alt="">
+                  <span>
+                    Transportz
+                  </span>
+                </div>
+                <div>
+                  <div class="header_top">
+                    <div class="header_top-contact">
+      
+                      <a href="" class="ml-4">
+                        <div>
+                          <img src="images/phone.png" alt="" />
+                        </div>
+                        <span>
+                          (+71) 258964785
+                        </span>
+                      </a>
+                      <a href="" class="ml-4">
+                        <div>
+                          <img src="images/mail.png" alt="" />
+                        </div>
+                        <span>
+                          NRNTYF@gmail.com
+                        </span>
+                      </a>
+                    </div>
+                    <div class="header_top-social">
+                      <div>
+                        <a href="">
+                          <img src="images/fb.png" alt="">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="">
+                          <img src="images/twitter.png" alt="">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="">
+                          <img src="images/g-plus.png" alt="">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="">
+                          <img src="images/linkedin.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_btm">
+                    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+      
+                      <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+      
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                          <ul class="navbar-nav  ">
+                         
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link pr-0" href="logout.php">LogOut</a>
+                          </li>
+                          </ul>
+      
+                        </div>
+      
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', {'packages':['bar']});
+            google.charts.setOnLoadCallback(drawChart);
+                  
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Year', 'users', 'driver'],
+                ['2014', 1000, 400],
+                ['2015', 1170, 460],
+                ['2016', 660, 1120],
+                ['2017', 1030, 540]
+              ]);
+      
+              var options = {
+                chart: {
+                  title: 'Company Performance',
+                  subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                },
+                bars: 'horizontal' // Required for Material Bar Charts.
+              };
+      
+              var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+      
+              chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+          </script>
+          <div id="barchart_material" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
